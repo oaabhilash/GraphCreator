@@ -43,6 +43,9 @@
     <Compile Include="Entities\CableConnection.cs" />
     <Compile Include="Entities\NodeEquipment.cs" />
     <Compile Include="Graph.cs" />
+    <Compile Include="Handlers\GraphHandler.cs" />
+    <Compile Include="Interfaces\IGraphHandler.cs" />
+    <Compile Include="Interfaces\IGraph.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

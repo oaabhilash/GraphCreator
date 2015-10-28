@@ -13,6 +13,10 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "25DataAccess", "25DataAcces
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphCreator.DataAccess", "GraphCreator.DataAccess\GraphCreator.DataAccess.csproj", "{B06833D1-5E84-4ADA-9FA7-0724B60841FB}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "95ConsoleApp", "95ConsoleApp", "{83F568F3-EECC-4E00-A709-E7565AC7F1B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphCreator.ConsoleTester", "GraphCreator.ConsoleTester\GraphCreator.ConsoleTester.csproj", "{59576BED-AF5D-489E-A84D-9280ABD243A4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -31,6 +35,10 @@ Global
 		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59576BED-AF5D-489E-A84D-9280ABD243A4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59576BED-AF5D-489E-A84D-9280ABD243A4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59576BED-AF5D-489E-A84D-9280ABD243A4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59576BED-AF5D-489E-A84D-9280ABD243A4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -38,5 +46,6 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{FDC44ED3-185E-4E5E-8668-F84595B532DD} = {A02842AB-D520-4E7B-B8CD-BA33B9B425D7}
 		{B06833D1-5E84-4ADA-9FA7-0724B60841FB} = {EFFA6B06-050E-4CEF-A81B-735799C93E63}
+		{59576BED-AF5D-489E-A84D-9280ABD243A4} = {83F568F3-EECC-4E00-A709-E7565AC7F1B7}
 	EndGlobalSection
 EndGlobal

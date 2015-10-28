@@ -1,4 +1,5 @@
 ﻿using GraphCreator.DataAccess.Entities;
+using GraphCreator.DataAccess.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace GraphCreator.DataAccess.Repositories
 {
-    public class CircuitRepository
+    public class CircuitRepository : ICircuitRepository
     {
 
         public List<CircuitRecord> GetGetEquipmentList(string circuitId)
@@ -16,7 +17,7 @@ namespace GraphCreator.DataAccess.Repositories
 
             //create initial trunc
 
-            for(int i = 0; i < 10;i++)
+            for(int i = 1; i < 10;i++)
             {
                 CircuitRecord rec1 = new CircuitRecord();
                 rec1.CableId = "CM0" + i;

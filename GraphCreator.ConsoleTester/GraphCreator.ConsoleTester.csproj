@@ -4,15 +4,17 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B06833D1-5E84-4ADA-9FA7-0724B60841FB}</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{59576BED-AF5D-489E-A84D-9280ABD243A4}</ProjectGuid>
+    <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>GraphCreator.DataAccess</RootNamespace>
-    <AssemblyName>GraphCreator.DataAccess</AssemblyName>
+    <RootNamespace>GraphCreator.ConsoleTester</RootNamespace>
+    <AssemblyName>GraphCreator.ConsoleTester</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -22,6 +24,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -40,12 +43,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\CircuitRecord.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Repositories\CircuitRepository.cs" />
-    <Compile Include="Interfaces\ICircuitRepository.cs" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GraphCreator.BusinessLogic\GraphCreator.BusinessLogic.csproj">
+      <Project>{fdc44ed3-185e-4e5e-8668-f84595b532dd}</Project>
+      <Name>GraphCreator.BusinessLogic</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GraphCreator.DataAccess\GraphCreator.DataAccess.csproj">
+      <Project>{b06833d1-5e84-4ada-9fa7-0724b60841fb}</Project>
+      <Name>GraphCreator.DataAccess</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

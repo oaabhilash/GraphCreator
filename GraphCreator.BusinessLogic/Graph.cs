@@ -1,4 +1,5 @@
 ﻿using GraphCreator.BusinessLogic.Entities;
+using GraphCreator.BusinessLogic.interfaces;
 using GraphCreator.DataAccess.Entities;
 using System;
 using System.Collections.Generic;
@@ -8,12 +9,14 @@ using System.Threading.Tasks;
 
 namespace GraphCreator.BusinessLogic
 {
-    public class Graph
+    public class Graph : IGraph
     {
         Dictionary<string, NodeEquipment> graphIndex;
         List<NodeEquipment> rootNodes;
 
         public string CircuitId { get; set; }
+
+        
 
         public Graph(string circuitId)
         {
@@ -21,6 +24,8 @@ namespace GraphCreator.BusinessLogic
             rootNodes = new List<NodeEquipment>();
             this.CircuitId = circuitId;
         }
+
+     
 
         public void AddNode(CircuitRecord circuitRecord)
         {
@@ -40,6 +45,8 @@ namespace GraphCreator.BusinessLogic
 
             sourceEquipment.ChildConnectionSet.Add(cable);
             destinationEquipment.ParentConnectionSet.Add(cable);
+            
+            
 
         }
 
@@ -58,6 +65,9 @@ namespace GraphCreator.BusinessLogic
                     EquipmentId = equipmentId,
                     EqipmentName = equipmentName
                 };
+
+                graphIndex.Add(equipmentId, equipment);
+
             }
 
             return equipment;
