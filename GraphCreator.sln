@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphCreator", "GraphCreator\GraphCreator.csproj", "{5C817378-D55F-442A-BB64-4CCC2CFB9E7D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "50BusinessLogic", "50BusinessLogic", "{A02842AB-D520-4E7B-B8CD-BA33B9B425D7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphCreator.BusinessLogic", "GraphCreator.BusinessLogic\GraphCreator.BusinessLogic.csproj", "{FDC44ED3-185E-4E5E-8668-F84595B532DD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "25DataAccess", "25DataAccess", "{EFFA6B06-050E-4CEF-A81B-735799C93E63}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphCreator.DataAccess", "GraphCreator.DataAccess\GraphCreator.DataAccess.csproj", "{B06833D1-5E84-4ADA-9FA7-0724B60841FB}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5C817378-D55F-442A-BB64-4CCC2CFB9E7D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C817378-D55F-442A-BB64-4CCC2CFB9E7D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C817378-D55F-442A-BB64-4CCC2CFB9E7D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C817378-D55F-442A-BB64-4CCC2CFB9E7D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FDC44ED3-185E-4E5E-8668-F84595B532DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FDC44ED3-185E-4E5E-8668-F84595B532DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FDC44ED3-185E-4E5E-8668-F84595B532DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FDC44ED3-185E-4E5E-8668-F84595B532DD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B06833D1-5E84-4ADA-9FA7-0724B60841FB}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FDC44ED3-185E-4E5E-8668-F84595B532DD} = {A02842AB-D520-4E7B-B8CD-BA33B9B425D7}
+		{B06833D1-5E84-4ADA-9FA7-0724B60841FB} = {EFFA6B06-050E-4CEF-A81B-735799C93E63}
+	EndGlobalSection
+EndGlobal
